@@ -6,8 +6,8 @@ P.S. We are going to use an array for easy reading but an usage a linked list is
 
 class Stack { 
     constructor(...start_elements) {
-        this.stack = start_elements.length > 0 ? start_elements : [];  // creating a queue
-        this.tail = start_elements.length;  //  creating an index of a last element of the queue (tail pointer)
+        this.stack = start_elements.length > 0 ? start_elements : [];  // creating a stack
+        this.tail = start_elements.length;  //  creating an index of a last element of the stack
     }
 
     sPush(...element) {  //  to add element into the end (top) of the stack.
@@ -33,7 +33,7 @@ class Stack {
 
 
 /**
- * The function checks an input string
+ * The function checks an input string (correctness of brackets) and return 'true' or 'false'
  * 
  * @param {string} code_string String for a check
  * @returns {boolean} 'true' if correct and 'false' if incorrect
